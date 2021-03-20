@@ -18,7 +18,7 @@ while captura.isOpened():
         print(captura.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
         out.write(frame)
-
+        out.write(frozenset)
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         cv2.imshow('frame', gray)
 
