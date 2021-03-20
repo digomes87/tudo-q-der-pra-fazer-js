@@ -10,7 +10,6 @@ out = cv2.VideoWriter('gravacao.avi', forc, 20.0, (680, 500))
 
 print(captura.isOpened())
 
-
 while captura.isOpened():
     ret, frame, = captura.read()
 
