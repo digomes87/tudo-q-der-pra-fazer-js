@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
+import CountryList from './components/CountryList/CountryList'
 
 class App extends React.Component{
     constructor(){
         super();
         this.state = {
-            contries:[],
+            contries:[],   
             stats: []
         }
     }
@@ -19,16 +20,14 @@ class App extends React.Component{
 
             if(data.length)
             this.setState(prevState => (
-                {stats:prevState.stats.concat({...data[data.length - 1]})}
+                {stats:prevState.stats.concat({...data[data.length - 1],CountryCode:country.ISO2})}
             ))
         })
     }
     render(){
     return(
         <div className="App">
-            {
-                this.state.stats.map(country => <h1>{country.Country}</h1>)
-            }
+           <CountryList stats = {this.state.stats} /> 
         </div>
     )
    }
