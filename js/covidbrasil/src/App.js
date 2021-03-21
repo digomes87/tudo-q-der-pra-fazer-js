@@ -17,14 +17,19 @@ class App extends React.Component{
             const resp = await fetch(`https://api.covid19api.com/total/country/${country.Slug}`)
             const data = await resp.json()
 
+            if(data.length)
             this.setState(prevState => (
-                {stats:prevState.stats.concat(data[data.length - 1])}
+                {stats:prevState.stats.concat({...data[data.length - 1]})}
             ))
         })
     }
     render(){
     return(
-        this.state.name
+        <div className="App">
+            {
+                this.state.stats.map(country => <h1>{country.Country}</h1>)
+            }
+        </div>
     )
    }
 }
