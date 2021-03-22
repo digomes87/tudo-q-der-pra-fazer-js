@@ -9,3 +9,24 @@
     transition: all 1s ease-in-out;
     cursor: pointer;
 }
+
+.country:hover {
+    transform: scala(1.1);
+}
+
+.country > img {
+    width: 33%;
+    height: auto;
+}
+
+.country > h2 {
+    margin: 5px 0;
+}
+
+.descricao {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:1rem;
+    justify-items: center;
+    width:95%;
+}
