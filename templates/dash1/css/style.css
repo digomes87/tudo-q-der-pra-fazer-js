@@ -23,13 +23,34 @@
 
 .sidebar-brand span{
   display: inline-block;
-  padding-right: 1rem;
+  padding-right: 2rem;
 }
 
 .sidebar-menu li {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem
 }
+
+.sidebar-menu a{
+  padding-left: 2rem;
+  display: block;
+  color: #fff
+  font-size: 1.1rem
+}
+
+.sidebar-menu a span:first-child{
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+.sidebar-menu a:hover{
+  background: #34FF32;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  color: #DD54DF
+}
+
 
 .sidebar {
   width: 345px;
