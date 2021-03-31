@@ -12,6 +12,10 @@ db.sqlite3
 db.sqlite3-journal
 media
 
+**/migrations/*
+!**/migrations
+!**/migrations/__init__.py
+
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
 # <django-project-name>/staticfiles/
@@ -271,7 +275,8 @@ fabric.properties
 # https://plugins.jetbrains.com/plugin/7973-sonarlint
 .idea/**/sonarlint/
 .idea/
-
+.dbdata/
+.dbdata
 # SonarQube Plugin
 # https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
 .idea/**/sonarIssues.xml
