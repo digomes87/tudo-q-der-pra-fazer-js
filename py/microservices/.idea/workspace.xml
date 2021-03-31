@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad2259b9-bd53-4d0d-9d8b-96bd8897c70c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/admin/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/main/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617201769640</updated>
       <workItem from="1617201772326" duration="2645000" />
-      <workItem from="1617204578130" duration="6037000" />
+      <workItem from="1617204578130" duration="6292000" />
     </task>
     <servers />
   </component>
