@@ -1,7 +1,9 @@
-from flask import Flask
+from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 from sqlalchemy import UniqueConstraint
+
+import requests
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = 'mysql://root:root@db/main'
@@ -24,11 +26,14 @@ class ProductUser(db.Model):
 
 
 
-@app.route('/')
+@app.route('/api/products')
 def index():
-    return 'deu tudo certo'
+    return jsonify(Product.query.all())
 
-
+@app.route('/api/products/<int:id>/like', methods=['POST'])
+def like(id):
+    req = requests.get('http://0.0.0.0:8000/api/user')
+    return jsonify(req.json())
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')

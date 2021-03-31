@@ -12,7 +12,7 @@ def callback(ch, method, properties, body):
     print('Okey, all was received')
     print(body)
 
-channel.basic_consume(queue='admin', on_message_callback=callback)
+channel.basic_consume(queue='admin', on_message_callback=callback, auto_ack=True)
 
 print('Starting consume')
 
