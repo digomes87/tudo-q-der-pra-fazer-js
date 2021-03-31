@@ -277,6 +277,7 @@ fabric.properties
 .idea/
 .dbdata/
 .dbdata
+.dbdata/**
 # SonarQube Plugin
 # https://plugins.jetbrains.com/plugin/7238-sonarqube-community-plugin
 .idea/**/sonarIssues.xml
