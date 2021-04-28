@@ -6,7 +6,7 @@ class App extends React.Component{
     constructor(){
         super();
         this.state = {
-            contries:[],   
+            contries:[],
             stats: []
         }
     }
@@ -17,7 +17,6 @@ class App extends React.Component{
         this.state.countries.forEach(async country =>{
             const resp = await fetch(`https://api.covid19api.com/total/country/${country.Slug}`)
             const data = await resp.json()
-
             if(data.length)
             this.setState(prevState => (
                 {stats:prevState.stats.concat({...data[data.length - 1],CountryCode:country.ISO2})}
@@ -27,7 +26,7 @@ class App extends React.Component{
     render(){
     return(
         <div className="App">
-           <CountryList stats = {this.state.stats} /> 
+           <CountryList stats = {this.state.stats} />
         </div>
     )
    }
