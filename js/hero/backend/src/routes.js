@@ -1,16 +1,12 @@
 const express =  require('express')
-
+const crypto = require('crypto')
 const routes = express.Router();
 
-routes.post('/users', (request, response) =>{
-    const params =  request.body;
-
-    console.log(params)
-
-    return response.json({
-        nome: 'Semana Medway',
-        idade: 34
-    });
+routes.post('/ongs', (request, response) =>{
+    const {name, whatsapp, email, city, uf} =  request.body;
+    const id = crypto.randomBytes(4).toString('HEX')    
+    console.log(data)
+    return response.json();
 });
 
 

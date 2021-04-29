@@ -9,6 +9,8 @@ db.sqlite3-journal
 media
 
 .DS_Store
+*~
+*.swp
 *.SWP
 *.o
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
